@@ -1,0 +1,174 @@
+# flextable 0.5.2
+
+## new features
+
+* new function `valign` to align vertically paragraphs in cell
+* new function `proc_freq` that mimic SAS proc freq provided by Titouan Robert.
+* new function `linerange` to produce mini lineranges.
+
+## Issues
+
+* fix issue with `set_footer_df`
+
+# flextable 0.5.1
+
+## Issues
+
+* fix issue with font colors in powerpoint
+* fix issues with colors for Windows RStudio viewer
+
+
+## new features
+
+* new themes functions `theme_alafoli()` and `theme_vader()`
+* new functions `align_text_col()` and `align_nottext_col()` to align
+  columns by data type
+* new functions `merge_h_range()` to merge a set of columns row by row
+* new functions `fix_border_issues()` fix issues with borders when cells are merged
+* new functions `add_header_row()`, `add_footer_row()`, `add_header_lines()`
+ and `add_footer_lines()` to add easily data in header or footer.
+* new generic function `as_flextable()` to let develop new flextable functions
+* new function `as_grouped_data()` and its method `as_flextable()` to
+  create row titles to separate data in a flextable.
+
+
+# flextable 0.5.0
+
+## Improvement
+
+* new arguments `values` for functions `set_header_labels` and `set_formatter`
+* styles functions now support injection of more than a single value
+* this version a big refactoring and got rid of R6
+
+## new features
+
+* new function `compose` that will replace `display`
+* new function `set_caption` only available for html output
+
+# flextable 0.4.7
+
+## new features
+
+* `knit_print()` can be used with rmarkdown when rendering to PowerPoint.
+
+## Issues
+
+* fix issue with `regulartable` and logical columns
+
+# flextable 0.4.6
+
+## new features
+
+* a new helper function `body_replace_flextable_at_bkm` to
+  replace a bookmarked paragraph by a flextable.
+* new functions `colformat_*` to make content formatting easier.
+  It also deals with NA.
+
+## Improvement
+
+* Documentation `format.flextable` method so that users can create
+  their components.
+* new knitr chunk options `ft.align` to align tables in
+  `rmarkdown::word_document` and `ft.split` to activate Word
+  option 'Allow row to break across pages'.
+
+## Issues
+
+* fix issue (unordered and duplicated chunk of text) in function `display()`
+
+
+# flextable 0.4.5
+
+## Improvement
+
+* flextable will not be split across rows at a page break in Word documents.
+
+## Issues
+
+* fix border rendering with `vline()`
+* empty data.frame are no more generating an error
+
+# flextable 0.4.4
+
+## new features
+
+* Soft return `\n` is now supported. Function `autofit` and `dim_pretty` do not
+  support soft returns and may return wrong results (\n will be considered as "").
+* format function for flextable objects.
+
+## Issues
+
+* fix border rendering with `border_outer()`
+
+
+# flextable 0.4.3
+
+## new features
+
+* new functions: `hyperlink_text()` to be used with `display`, `font()`
+* new functions `hline*()` and `vline*()` and many new helper functions
+  to be used instead of borders.
+
+## Improvement
+
+* manuals have been refactored
+
+
+## Issues
+
+* fix display issue when a cell was containing NA
+
+
+# flextable 0.4.2
+
+## new features
+
+* new function `xtable_to_flextable()` that is returning
+  a flextable from an xtable object.
+* function `htmltools_value()` is exported for shiny applications.
+
+# flextable 0.4.1
+
+## new features
+
+* flextables have now a footer part
+
+
+# flextable 0.4.0
+
+## new features
+
+* new function `knit_print()` to render flextable in rmarkdown.
+
+## Changes
+
+* function tabwid() is deprecated in favor of a knit_print implementation.
+* list of dependencies has been reduced.
+
+# flextable 0.3
+
+## new features
+
+* new function `regulartable`, faster and simpler than `flextable`
+
+## Issues
+
+* characters <, > and & are now html encoded
+* fix columns widths when output format is HTML
+
+# flextable 0.2
+
+## new features
+
+* new function `ph_with_flextable_at` to add a flextable at any position in a slide.
+* new function `merge_at` is providing a general way of merging cells.
+* new theme function: `theme_box()`
+
+## Changes
+
+* function display() now works with a mustache template
+
+## Issues
+
+* fix fontsize when part == "all"
+

@@ -1,0 +1,81 @@
+add_header_footer       Add a row of labels in header or footer part
+align                   Set text alignment
+as_chunk                chunk of text wrapper
+as_flextable            method to convert object to flextable
+as_grouped_data         grouped data transformation
+as_image                image chunk wrapper
+as_paragraph            concatenate chunks in a flextable
+autofit                 Adjusts cell widths and heights
+bg                      Set background color
+body_add_flextable      add flextable into a Word document
+bold                    Set bold font
+border                  Set cell borders
+border_inner            set vertical & horizontal inner borders
+border_inner_h          set inner borders
+border_inner_v          set vertical inner borders
+border_outer            set outer borders
+border_remove           remove borders
+colformat_char          format character columns
+colformat_int           format integer columns
+colformat_lgl           format logical columns
+colformat_num           format numeric columns
+color                   Set font color
+compose                 Define flextable displayed values
+delete_part             delete flextable part
+dim.flextable           Get flextable dimensions
+dim_pretty              Calculate pretty dimensions
+display                 Define flextable displayed values
+empty_blanks            make blank columns as transparent
+fix_border_issues       fix border issues when cell are merged
+flextable               flextable creation
+flextable-package       flextable: Functions for Tabular Reporting
+font                    Set font
+fontsize                Set font size
+footers_flextable_at_bkm
+                        add flextable at a bookmark location in
+                        document's footer
+format.flextable        Encode flextable in a document format.
+headers_flextable_at_bkm
+                        add flextable at a bookmark location in
+                        document's header
+height                  Set flextable rows height
+hline                   set horizontal borders
+hline_bottom            set bottom horizontal border
+hline_top               set top horizontal border
+htmltools_value         flextable a tag object from htmltools package
+hyperlink_text          chunk of text with hyperlink wrapper
+italic                  Set italic font
+knit_print.flextable    Render flextable in rmarkdown
+linerange               mini linerange chunk wrapper
+merge_at                Merge flextable cells into a single one
+merge_h                 Merge flextable cells horizontally
+merge_h_range           rowwise merge of a range of columns
+merge_none              Delete flextable merging informations
+merge_v                 Merge flextable cells vertically
+minibar                 mini barplots chunk wrapper
+padding                 Set paragraph paddings
+ph_with_flextable       add flextable into a PowerPoint slide
+print.flextable         flextable printing
+proc_freq               frequency table as flextable
+rotate                  rotate cell text
+save_as_html            save a flextable in an HTML file
+set_caption             set caption
+set_formatter           set column formatter functions
+set_header_footer_df    Set flextable's header or footer rows
+set_header_labels       Set flextable's headers labels
+style                   Set flextable style
+theme_alafoli           Apply box theme
+theme_booktabs          Apply booktabs theme
+theme_box               Apply box theme
+theme_tron              Apply tron theme
+theme_tron_legacy       Apply tron legacy theme
+theme_vader             Apply Sith Lord Darth Vader
+theme_vanilla           Apply vanilla theme
+theme_zebra             Apply zebra theme
+valign                  Set vertical alignment
+vline                   set vertical borders
+vline_left              set flextable left vertical borders
+vline_right             set flextable right vertical borders
+void                    Delete flextable content
+width                   Set flextable columns width
+xtable_to_flextable     get a flextable from a xtable object
